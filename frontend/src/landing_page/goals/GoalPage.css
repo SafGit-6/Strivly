@@ -1,0 +1,60 @@
+.selectedBtn{
+    background: none;
+    color: white;
+    border:none;
+    padding:8px;
+}
+
+.unselectedBtn{
+    background: black;
+    color:var(--purple);
+    border:0.5px solid var(--darkCardBorder);
+    border-radius: 8px;
+    padding:8px;
+}
+
+.unselectedBtn:hover{
+    background: var(--darkCardBorder);
+    color: white;
+}
+
+.statusBtn{
+ color: var(--purple);
+ background: none;
+ border: 1px solid rgb(43, 45, 50);
+}
+
+.categoryBtn{
+ color: var(--purple);
+ background-color: rgba(139, 77, 255, 0.25);
+ border: 1px solid var(--darkCardBorder);
+}
+
+.goal-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 1%; /* smaller horizontal gap */
+  justify-content: space-between;
+}
+
+.goal-card-wrapper {
+  flex: 0 1 49%;
+  box-sizing: border-box;
+  margin-bottom: 1.2rem; /* match vertical gap */
+}
+
+.goal-input {
+  color: var(--textColor);
+}
+
+.goal-input::placeholder {
+  color: var(--grayText);
+  opacity: 1; /* Ensure placeholder color is visible */
+}
+
+/* For textarea placeholder as well */
+textarea.goal-input::placeholder {
+  color: var(--grayText);
+  opacity: 1;
+}
+

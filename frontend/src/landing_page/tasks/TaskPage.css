@@ -1,0 +1,10 @@
+
+.forGoal{
+    color:var(--gold);
+    background-color: var(--goldBackground);
+}
+
+.completedTask{
+    text-decoration: line-through;
+    color: var(--grayText);
+}

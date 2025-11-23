@@ -1,0 +1,65 @@
+# --------------------
+# 1. DEPENDENCIES AND BUILD ARTIFACTS
+# --------------------
+
+# Node dependencies (Frontend & Backend)
+/node_modules
+/backend/node_modules
+/frontend/node_modules
+
+# Build/Distribution folders
+/dist
+/build
+/out
+/dist-ssr
+/coverage/                  # Suggested: Ignore test coverage reports
+/logs
+
+# --------------------
+# 2. CONFIGURATION & SECRETS (HIGH PRIORITY)
+# --------------------
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.*
+
+# --------------------
+# 3. LOCK FILES (Optional, but usually recommended)
+# --------------------
+
+# Suggested: Ignore package lock files to ensure team members use the package manifest (package.json) 
+# and not the exact lock state, or if you only use one package manager (e.g., yarn)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --------------------
+# 4. LOCAL DATABASE FILES (For testing or local setup)
+# --------------------
+
+# Suggested: Ignore local database files (even if you're using MongoDB, these are good placeholders)
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+
+# --------------------
+# 5. OS and Editor Files
+# --------------------
+
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace          # Suggested: Ignore VS Code workspace settings

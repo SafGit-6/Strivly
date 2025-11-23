@@ -1,0 +1,18 @@
+ .custom-textarea{
+  min-height:6rem;
+  padding: 0.75rem;
+  font-size:14px;
+  color: var(--textColor);
+}
+
+.custom-textarea::placeholder {
+  color: var(--grayText);
+}
+
+/* Motivation card styles */
+.motivationCard p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 1rem 0;
+}

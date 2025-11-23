@@ -1,0 +1,78 @@
+/* Focus mode styles */
+
+/* task select buttons */
+.taskBtn {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.taskBtn:hover {
+  background-color: rgba(222, 84, 10, 0.313);
+  transform: scale(1.02);
+}
+
+.taskBtnGoal{
+  margin-left: 5px;
+  font-size: small;
+  background-color: rgba(222, 84, 10, 0.313);
+  color:var(--orange);
+  border-radius: 5px;
+}
+
+.focusTextArea{
+  border: 0.5px solid rgba(255, 110, 32, 0.435);
+  border-radius: 8px;
+  background-color: var(--lightCardBg);
+
+  min-height:6rem;
+  padding: 0.75rem;
+  font-size:14px;
+  color: var(--textColor);
+}
+
+.focusTextArea::placeholder {
+  color: var(--grayText);
+}
+
+.exit-btn {
+  border-radius: 50%;
+  background-color: rgba(33, 37, 41, 0.8); /* dark with opacity */
+  color: #ccc; /* light gray text */
+  border: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.exit-btn:hover {
+  background-color: rgba(52, 58, 64, 1); /* darker on hover */
+  color: #fff; /* white text */
+}
+
+/* Blur background when modal is open */
+.blurred {
+  filter: blur(2px); /* reduced blur level */
+  pointer-events: none; /* optional: prevent interaction with blurred content */
+}
+
+/* Exit confirmation modal styles */
+.exit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.exit-modal-content {
+  background: #1e293b; /* dark blue background */
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  width: 90%;
+}
+

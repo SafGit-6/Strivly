@@ -1,0 +1,4 @@
+.ytSearchInput::placeholder {
+  color: var(--grayText);
+}
+

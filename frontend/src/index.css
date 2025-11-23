@@ -1,0 +1,98 @@
+:root {
+  --background: rgb(18, 23, 35);
+
+  /*text colors*/
+  --textColor: white;
+  --grayText: rgb(164, 171, 180);
+
+  /*card colors*/
+  --darkCardBg:rgb(24, 29, 41);
+  --darkCardBorder: rgb(69, 18, 99);
+  --lightCardBg: rgb(44, 50, 67);
+
+  /*button colors*/
+  --purple:rgb(139, 77, 255); 
+  --green:rgb(36, 189, 143);
+  --orange:rgb(255, 110, 32);
+
+  /*more colors*/
+  --darkPurple: rgb(115, 57, 231);
+  --darkOrange:rgb(222, 84, 10);
+  --darkGreen:rgb(16, 139, 102); 
+
+  --dullPurple:rgb(90, 50, 165);
+  --quoteText: rgb(249, 206, 127);
+  --gold: rgb(255, 213, 0);
+  --goldBackground: rgba(255, 213, 0, 0.39);
+}
+
+body {
+  background-color: var(--background);
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(to right, #e44ba1, #f6d049); /* pink to orange */
+  -webkit-background-clip: text;
+  background-clip: text; /* standard property for compatibility */
+  -webkit-text-fill-color: transparent;
+}
+
+.darkGreyCard {
+  border: 0.5px solid var(--darkCardBorder);
+  border-radius: 8px;
+  background-color: var(--darkCardBg);
+}
+
+.lightGreyCard {
+  border: 0.5px solid var(--darkCardBorder);
+  border-radius: 8px;
+  background-color: var(--lightCardBg);
+}
+
+.lightGreenCard {
+  border: 0.5px solid var(--darkGreen);
+  border-radius: 8px;
+  background-color: rgba(16, 139, 102, 0.211); 
+}
+
+.simpleDarkGreyCard{
+  border: 0.5px solid rgb(43, 45, 50);
+  border-radius: 8px;
+  background-color: var(--darkCardBg);
+}
+
+.simpleLightGreyCard{
+  border: 0.5px solid rgb(43, 45, 50);
+  border-radius: 8px;
+  background-color: var(--lightCardBg);
+}
+
+.purpleBtn {
+  background-color: var(--purple);
+  border: none;
+}
+
+.purpleBtn:hover {
+  background-color: var(--darkPurple); 
+}
+
+.orangeBtn {
+  background-color: var(--orange);
+  border: none;
+}
+
+.orangeBtn:hover {
+  background-color: var(--darkOrange);
+}
+
+.greenBtn {
+  background-color: var(--green);
+  border: none;
+}
+
+.greenBtn:hover {
+  background-color: var(--darkGreen);
+}
+
+

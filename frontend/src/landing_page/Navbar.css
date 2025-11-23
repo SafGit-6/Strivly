@@ -1,0 +1,39 @@
+/* Navbar styles */
+.nav-button {
+  background: none;
+  border: none;
+  color: var(--textColor);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  color: rgb(191, 163, 248);
+  outline: none;
+}
+
+.nav-button:hover{
+  background: rgba(139, 77, 255, 0.25);
+  border-radius: 8px;
+}
+
+.nav-button i {
+  padding-right: 5px;
+}
+
+/* 🔥 Active route highlight */
+.nav-button-active {
+  color: rgb(191, 163, 248);
+}
+
+.navbar-toggler {
+  border: none; /* Optional: remove border */
+}
+
+/* Change the icon color to white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
